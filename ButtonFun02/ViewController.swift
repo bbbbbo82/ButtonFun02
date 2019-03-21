@@ -9,16 +9,26 @@
 import UIKit
 
 class ViewController: UIViewController {
-
+    @IBOutlet weak var myLabel: UILabel!
+    
+    var count = 0;
+    
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
+        myLabel.text = "준민이 얼짱"
     }
 
-    override func didReceiveMemoryWarning() {
-        super.didReceiveMemoryWarning()
-        // Dispose of any resources that can be recreated.
+    @IBAction func buttonAction(_ sender: Any) {
+     
+        
+        myLabel.text = String(count)
+        count += 1;
+        
+        
+        
     }
+    
 
 
 }
