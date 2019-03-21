@@ -12,6 +12,8 @@ class ViewController: UIViewController {
     @IBOutlet weak var myLabel: UILabel!
     
     var count = 0;
+    var check = true;
+    
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -23,9 +25,20 @@ class ViewController: UIViewController {
      
         
         myLabel.text = String(count)
-        count += 1;
+        if (check == true){
+            count += 1;
+            
+        }
+        else if (check == false){
+            count -= 1;
+        }
         
-        
+        if (count == 9){
+            check = false;
+        }
+        else if ( count == 0){
+            check = true;
+        }
         
     }
     
