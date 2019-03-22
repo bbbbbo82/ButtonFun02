@@ -18,7 +18,7 @@ class ViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view, typically from a nib.
-        myLabel.text = "준민이 얼짱"
+        myLabel.text = "안녕하세요"
     }
 
     @IBAction func buttonAction(_ sender: Any) {
